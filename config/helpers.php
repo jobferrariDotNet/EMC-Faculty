@@ -3,9 +3,9 @@ class Helpers{
     public $asset_path;
     public $root_dir;
     public $base_url;
-    public function __construct()
+    public function __construct($host_address)
     {
-        $this->base_url='http://localhost/~jobferrera/emc/';
+        $this->base_url='http://'.$host_address.'/';
         $this->root_dir= __DIR__;
         $this->asset_path=$this->base_url.'assets/';
     }
